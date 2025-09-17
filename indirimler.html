@@ -2,35 +2,52 @@
 <html lang="tr">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>IEEE Bursa Uludağ İndirimler</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
-    body { font-family: Arial, sans-serif; margin: 20px; background: #f7f7f7; }
-    h1 { color: #003366; }
-    .brand { padding: 10px; margin: 10px 0; background: white; border-radius: 8px; box-shadow: 0 0 5px rgba(0,0,0,0.1); }
-    .discount { font-weight: bold; color: green; }
+    body { background: #f8f9fa; }
+    .card { margin-bottom: 15px; }
+    .discount { font-size: 1.2rem; font-weight: bold; color: green; }
+    footer { margin-top: 30px; font-size: 0.9rem; color: #666; text-align: center; }
   </style>
 </head>
 <body>
-  <h1>IEEE Bursa Uludağ Anlaşmalı Restoranlar</h1>
-  <p>Bu kartı göstererek aşağıdaki işletmelerden indirim alabilirsiniz:</p>
+  <div class="container mt-4">
+    <h1 class="text-center text-primary mb-4">IEEE Bursa Uludağ Anlaşmalı Restoranlar</h1>
+    <p class="text-center">Bu kartı göstererek aşağıdaki işletmelerden indirim alabilirsiniz:</p>
 
-  <div class="brand">
-    <h2>Bursa Kebap Evi</h2>
-    <p class="discount">%15 indirim</p>
+    <!-- Restoran 1 -->
+    <div class="card shadow-sm">
+      <div class="card-body">
+        <h5 class="card-title">Bursa Kebap Evi</h5>
+        <p class="discount">%15 indirim</p>
+      </div>
+    </div>
+
+    <!-- Restoran 2 -->
+    <div class="card shadow-sm">
+      <div class="card-body">
+        <h5 class="card-title">Çınar Pastanesi</h5>
+        <p class="discount">%10 indirim</p>
+      </div>
+    </div>
+
+    <!-- Restoran 3 -->
+    <div class="card shadow-sm">
+      <div class="card-body">
+        <h5 class="card-title">Local Coffee</h5>
+        <p class="discount">%12 indirim</p>
+      </div>
+    </div>
+
+    <footer>
+      *İndirimler sadece IEEE Bursa Uludağ University öğrenci kartı ile geçerlidir.
+    </footer>
   </div>
 
-  <div class="brand">
-    <h2>Çınar Pastanesi</h2>
-    <p class="discount">%10 indirim</p>
-  </div>
-
-  <div class="brand">
-    <h2>Local Coffee</h2>
-    <p class="discount">%12 indirim</p>
-  </div>
-
-  <footer style="margin-top: 30px; font-size: 12px; color: #666;">
-    *İndirimler sadece IEEE Bursa Uludağ University öğrenci kartı ile geçerlidir.
-  </footer>
+  <!-- Bootstrap JS (opsiyonel, bazı efektler için) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
